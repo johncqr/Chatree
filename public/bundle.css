@@ -42,9 +42,9 @@
       color: red; }
 
 .mainPage .branch .chatLog {
+  padding-bottom: 60px;
   height: 100%;
   font-size: 125%;
-  overflow-y: auto;
   background-color: black; }
   .mainPage .branch .chatLog .chatMessage {
     overflow: hidden;
@@ -66,6 +66,7 @@
 .mainPage .branch .chatInput {
   border: 10px solid black;
   color: black;
+  height: 60px;
   width: 100%;
   bottom: 0;
   outline: none;
@@ -73,6 +74,7 @@
   position: fixed; }
 
 .mainPage .branch .userList {
+  margin-bottom: 60px;
   border: 5px solid white;
   float: right;
   height: 100%;

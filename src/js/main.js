@@ -59,6 +59,10 @@ class AppBase extends React.Component {
         const { branches } = this.state;
         branches[this.getObjectIndexById(branches, branchId)].messages.push(message);
         this.setState({ branches });
+        let chatLogElement = document.querySelector("#"+branchId+" .chatLog");
+        console.log(chatLogElement.scrollTop);
+        console.log(chatLogElement.scrollHeight);
+        chatLogElement.scrollTop = chatLogElement.scrollHeight;
     }
 
     _editMessage(branchId, id, username, messageContent, alert, branchedId) {

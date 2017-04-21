@@ -57,9 +57,9 @@ $link-color: red;
   }
   .branch {
     .chatLog {
+      padding-bottom: 60px;
       height: 100%;
       font-size: 125%;
-      overflow-y: auto;
       background-color: $primary-color;
       .chatMessage {
         overflow: hidden;
@@ -89,6 +89,7 @@ $link-color: red;
     .chatInput {
       border: 10px solid $primary-color;
       color: black;
+      height: 60px;
       width: 100%;
       bottom: 0;
       outline: none;
@@ -96,6 +97,7 @@ $link-color: red;
       position: fixed;
     }
     .userList {
+      margin-bottom: 60px;
       border: 5px solid $secondary-color;
       float: right;
       height: 100%;

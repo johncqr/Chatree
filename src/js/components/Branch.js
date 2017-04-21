@@ -11,7 +11,7 @@ export default function Branch({ id, topic, messages, users, onSubmitMessage, on
     };
 
     return (
-        <div className="branch" style={style} >
+        <div id={id} className="branch" style={style} >
             <h1 className="branchTopic">{topic}</h1>
             <UserList users={users} />
             <ChatBase
