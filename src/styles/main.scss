@@ -1,0 +1,119 @@
+$primary-color: black;
+$secondary-color: white;
+$link-color: red;
+
+.introPage, .mainPage {
+  background-color: $primary-color;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0; 
+  position: absolute;
+  width: 100%;
+}
+
+.introPage  {
+  text-align: center;
+  .usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 200%;
+    outline: none;
+    text-align: center;
+    width: 400px;
+  }
+}
+
+.mainPage {
+  .treeWidget {
+    position: fixed;
+    top: 0;
+    .treeViewer {
+      background-color: $secondary-color;
+      color: $primary-color;
+      font-size: 125%;
+      cursor: pointer;
+    }
+    .treeViewer:hover {
+      color: $link-color;
+    }
+    .visualTree {
+      background-color: $secondary-color;
+      padding: 10px;
+      color: $primary-color;
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        span {
+          border-radius: 5px;
+          border: 2px solid white;
+        }
+      }
+      li:hover {
+        color: $link-color;
+      }
+    }
+  }
+  .branch {
+    .chatLog {
+      height: 100%;
+      font-size: 125%;
+      overflow-y: auto;
+      background-color: $primary-color;
+      .chatMessage {
+        overflow: hidden;
+        width: 75%;
+        margin: 20px 10px;
+        .usernameText {
+          font-weight: bold;
+        }
+        .messageText {
+          cursor: pointer;
+          word-wrap: break-word;
+          // border: 2px solid $secondary-color;
+          // border-radius: 25px;
+          // padding: 7px;
+        }
+        .messageText:hover {
+          color: red;
+          font-size: 120%;
+        }
+        .alertText {
+          color: red;
+          font-size: 90%;
+          margin-top: 10px;
+        }
+      }
+    }
+    .chatInput {
+      border: 10px solid $primary-color;
+      color: black;
+      width: 100%;
+      bottom: 0;
+      outline: none;
+      padding: 10px;
+      position: fixed;
+    }
+    .userList {
+      border: 5px solid $secondary-color;
+      float: right;
+      height: 100%;
+      margin-right: 10px;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      position: fixed;
+      z-index: 2;
+      li {
+        list-style-type: none;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.visualBranch .active {
+  font-size: 150%;
+  color: $link-color;
+}

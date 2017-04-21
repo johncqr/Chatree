@@ -1,0 +1,93 @@
+.introPage, .mainPage {
+  background-color: black;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%; }
+
+.introPage {
+  text-align: center; }
+  .introPage .usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 200%;
+    outline: none;
+    text-align: center;
+    width: 400px; }
+
+.mainPage .treeWidget {
+  position: fixed;
+  top: 0; }
+  .mainPage .treeWidget .treeViewer {
+    background-color: white;
+    color: black;
+    font-size: 125%;
+    cursor: pointer; }
+  .mainPage .treeWidget .treeViewer:hover {
+    color: red; }
+  .mainPage .treeWidget .visualTree {
+    background-color: white;
+    padding: 10px;
+    color: black; }
+    .mainPage .treeWidget .visualTree li {
+      list-style-type: none;
+      cursor: pointer; }
+      .mainPage .treeWidget .visualTree li span {
+        border-radius: 5px;
+        border: 2px solid white; }
+    .mainPage .treeWidget .visualTree li:hover {
+      color: red; }
+
+.mainPage .branch .chatLog {
+  height: 100%;
+  font-size: 125%;
+  overflow-y: auto;
+  background-color: black; }
+  .mainPage .branch .chatLog .chatMessage {
+    overflow: hidden;
+    width: 75%;
+    margin: 20px 10px; }
+    .mainPage .branch .chatLog .chatMessage .usernameText {
+      font-weight: bold; }
+    .mainPage .branch .chatLog .chatMessage .messageText {
+      cursor: pointer;
+      word-wrap: break-word; }
+    .mainPage .branch .chatLog .chatMessage .messageText:hover {
+      color: red;
+      font-size: 120%; }
+    .mainPage .branch .chatLog .chatMessage .alertText {
+      color: red;
+      font-size: 90%;
+      margin-top: 10px; }
+
+.mainPage .branch .chatInput {
+  border: 10px solid black;
+  color: black;
+  width: 100%;
+  bottom: 0;
+  outline: none;
+  padding: 10px;
+  position: fixed; }
+
+.mainPage .branch .userList {
+  border: 5px solid white;
+  float: right;
+  height: 100%;
+  margin-right: 10px;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  position: fixed;
+  z-index: 2; }
+  .mainPage .branch .userList li {
+    list-style-type: none;
+    margin: 10px; }
+
+.visualBranch .active {
+  font-size: 150%;
+  color: red; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJidW5kbGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
